@@ -1,0 +1,13 @@
+
+
+<span style= "color:red; font-size: 20px;"> Sku: {{informacion?.sku}}</span>
+
+<app-tabla
+  [columnas]="columnas"
+  [data]="misProductos"
+  [titulo]="titulo"
+  (onInformacion)="recibirInformacion($event)"
+></app-tabla>
+
+<!-- // parentesis output
+//[] input -->
